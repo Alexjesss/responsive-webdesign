@@ -1,0 +1,42 @@
+
+p, h2 {text-align: center;
+        padding: 20px;
+margin: auto;
+}
+
+
+
+.col-3, .col-4, .col-5 {float: left;width: 33.33%; box-sizing: border-box;}
+
+#small {background-color: lightgrey;  }
+#medium {background-color: lightblue;}
+#large {background-color: lightcoral;}
+
+@media screen and (max-width: 300px) {
+    body {background-color: red;}
+    p, h2 {font-size: 16px;}
+ .col-3, .col-4, .col-5 {width: 100%;}
+}
+
+@media only screen and (min-width: 301px) and (max-width: 768px) {
+
+    body {background-color: green;}
+    p,h2 {font-size: 20px;}
+    .col-4 {width: 66.66%;}
+    }
+
+
+@media only screen and (min-width: 768px) {
+
+    body {background-color: blue;}
+    p,h2 {font-size: 23px;}
+    .col-5 {width: 33.33%;}
+
+
+
+
+}
+
+
+
+
